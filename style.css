@@ -1,0 +1,143 @@
+/* External stylesheet for Samuel's personal portfolio */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #eef5ff;
+}
+
+.site-header {
+    text-align: center;
+    background: #17365d;
+    color: white;
+    padding: 22px 12px;
+}
+
+.site-header h1 {
+    margin: 0 0 8px;
+}
+
+.site-header p {
+    margin: 0;
+}
+
+.portfolio-layout {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 12px;
+    max-width: 1050px;
+    margin: 24px auto;
+    padding: 0 14px;
+    min-height: 570px;
+}
+
+.frame-panel {
+    border: 1px solid #333;
+    background: white;
+    min-width: 0;
+}
+
+.frame-heading {
+    margin: 0;
+    padding: 10px;
+    background: #fff176;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.menu-frame,
+.content-frame {
+    display: block;
+    width: 100%;
+    height: 525px;
+    border: 0;
+    background: white;
+}
+
+.menu-page {
+    padding: 12px;
+    background: #f8fbff;
+}
+
+.menu-title {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+nav a {
+    display: block;
+    color: #17365d;
+    text-decoration: none;
+    padding: 10px 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #dceaff;
+    text-decoration: underline;
+}
+
+.content-page {
+    padding: 18px;
+    line-height: 1.6;
+    background: white;
+}
+
+.content-page h2 {
+    color: #17365d;
+    border-bottom: 2px solid #dceaff;
+    padding-bottom: 8px;
+}
+
+.content-page h3 {
+    color: #315b8a;
+    margin-bottom: 5px;
+}
+
+.passport-photo {
+    float: right;
+    width: 125px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #17365d;
+    margin: 0 0 12px 16px;
+}
+
+.activity-photo {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.small-note {
+    color: #666;
+    font-size: 13px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 14px;
+    background: #17365d;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .portfolio-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-frame {
+        height: 260px;
+    }
+
+    .content-frame {
+        height: 520px;
+    }
+}
